@@ -1,0 +1,103 @@
+:root {
+    --blanco: #ffffff;
+    --negro: #000000;
+    --secundario: #161b22 ;
+    --terciario: #6F6F72;
+    --cuarto: #8C8C8C;
+    --SizeTitle: 3.8rem;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*::before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    color: var(--blanco);
+    background-color: #000000;
+    margin:0 auto;
+}
+
+.logo{
+    display: inline;
+}
+
+h1.title {
+    display: inline;
+        
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+h1.title span {
+    font-size: 2rem;
+    
+}
+
+h2.Subtitle {
+    text-align: center;
+    font-size: 3.8rem;
+   
+}
+
+
+.navegacion-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navegacion-main a:hover {
+    background-color: var(--terciario);
+    color: var(--negro);
+}
+
+.nav-bg{
+    background-color: var(--secundario) ;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.navegacion-main a{
+ color: var(--blanco);
+ text-decoration: none;
+ font-size: 2rem;
+ padding: 1rem;
+ font-weight: bold;
+
+ 
+}
+
+@media (min-width: 768px) {
+    .navegacion-main{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+} 
+
+
+.banner {  
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+
+    position: relative;
+}
+
+.contenido-banner{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+
+    
+}
